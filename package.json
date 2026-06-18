@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --test jsAxios/**/*.test.js",
+    "test:axios": "node --test jsAxios/jsonPlaceholder.test.js",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
@@ -27,6 +28,7 @@
   },
   "homepage": "https://github.com/nikitaekaterinin/auto-js-course#readme",
   "dependencies": {
+    "axios": "^1.18.0",
     "chalk": "^5.6.2"
   },
   "devDependencies": {
