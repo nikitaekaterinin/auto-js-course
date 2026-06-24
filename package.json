@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node --test jsAxios/**/*.test.js",
+    "test": "node --test jsAxios/jsonPlaceholder.test.js && NODE_OPTIONS=--experimental-vm-modules jest",
     "test:axios": "node --test jsAxios/jsonPlaceholder.test.js",
+    "test:jest": "NODE_OPTIONS=--experimental-vm-modules jest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
@@ -36,6 +37,7 @@
     "eslint": "^10.5.0",
     "eslint-config-prettier": "^10.1.8",
     "husky": "^9.1.7",
+    "jest": "^30.4.2",
     "lint-staged": "^17.0.7",
     "prettier": "^3.8.4"
   }
